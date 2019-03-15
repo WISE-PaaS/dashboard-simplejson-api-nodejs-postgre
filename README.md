@@ -24,8 +24,6 @@ WISE-PaaS 提供 API 開發平台，客戶可以依照所熟悉的語言進行�
 ## STEP 1. 建立 Node.js 初始目錄
 
 請先使用 `npm init` 如下命令，初始化開發目錄。
-
-![STEP 1-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-1-1.png "STEP 1-1")
 並且所在目錄會建立一個檔案 Package.json
 
 ```json
@@ -56,20 +54,16 @@ Node.js 社群提供一個非常好用的 API server 模組 Express 方便開發
 
 請先使用 `npm install express --save` 如下命令，安裝並且更新設定到 Package.json 檔案。
 
-![STEP 2-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-2-1.png "STEP 2-1")
 
 ## STEP 3. 安裝 PostgreSQLDB 存取模組 --- pg
 
 請先使用 `npm install pg --save` 如下命令，安裝並且更新設定到 Package.json 檔案。
-
-![STEP 3-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-3-1.png "STEP 3-1")
 
 
 ## STEP 4. 安裝 URL 解析模組 --- Body Parser
 
 請先使用 `npm install body-parser --save` 如下命令，安裝並且更新設定到 Package.json 檔案。
 
-![STEP 4-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-4-1.png "STEP 4-1")
 
 ## STEP 5. 建立 index.js 並且引入相關模組
 
@@ -89,9 +83,6 @@ app.use(bodyParser.json());
 ## STEP 7. 依照 PostgreSQLDB 資料格式，建立 Data Schema
 
 利用 HeidiSQL UI 可以看到 PostgreSQLDB 的表格定義如下
-
-![STEP 7-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-7-1.png "STEP 7-1")
-
 所以依照上述定義，建立 SQL 命令
 
 ```javascript
@@ -411,8 +402,6 @@ cf login --skip-ssl-validation -a api.wise-paas.com -u a9625@aaa.com.tw -p 12345
 ```
 登入結果如下圖:
 
-![STEP 14-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-14-1.png "STEP 14-1")
-
 
 ## STEP 15. 佈署 App 到  WISE-PaaS
 
@@ -420,13 +409,6 @@ cf login --skip-ssl-validation -a api.wise-paas.com -u a9625@aaa.com.tw -p 12345
 ```
 cf push
 ```
-結果如下圖:
-
-![STEP 15-1](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-15-1.png "STEP 15-1")
-
-![STEP 15-2](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-15-2.png "STEP 15-2")
-
-![STEP 15-3](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-15-3.png "STEP-15-3")
 
 ## STEP 16. 使用 WISE-PaaS/Dashboard 觀察
 
@@ -434,5 +416,3 @@ cf push
 2. 建立 SimpleJSON datasource
 3. 連線到 API
 4. 顯示資料
-
-![STEP 16-2](http://advgitlab.eastasia.cloudapp.azure.com/EI-PaaS-SampleCode/SimpleJSONAPI_Sample_NodeJS_PostgreSQL/raw/098657090e61fa6103b5af626fc8e6edeef625fa/img/STEP-16-2.png "STEP-16-2")
