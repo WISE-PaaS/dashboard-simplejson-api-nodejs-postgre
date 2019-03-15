@@ -1,0 +1,9 @@
+---
+applications:
+- name: api-developer-guide-nodejs-postgresql-1.0.0
+  memory: 64M
+  instances: 1
+  health-check-type: process
+  version: 1.0.0
+  host: api-postgresql-1-0-0
+  buildpack: nodejs_buildpack_1620
